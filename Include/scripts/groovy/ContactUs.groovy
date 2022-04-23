@@ -43,22 +43,35 @@ import cucumber.api.java.en.When
 
 
 
-class ContactUs {
-	/**
-	 * The step definitions below match with Katalon sample Gherkin steps
-	 */
-	@Given("I want to write a step with (.*)")
-	def I_want_to_write_a_step_with_name(String name) {
-		println name
-	}
+@Given("User on home page")
+def userOnHomePage() {
+	WebUI.openBrowser('')
 
-	@When("I check for the (\\d+) in step")
-	def I_check_for_the_value_in_step(int value) {
-		println value
-	}
+	WebUI.maximizeWindow()
 
-	@Then("I verify the (.*) in step")
-	def I_verify_the_status_in_step(String status) {
-		println status
-	}
+	WebUI.navigateToUrl('https://services.smartbear.com/samples/TestComplete15/smartstore/')
+}
+
+@And("User click menu contact us")
+def userClickMenuContactUs() {
+	WebUI.click(findTestObject('ContactUs/Btn_ContactUs'), FailureHandling.STOP_ON_FAILURE)
+}
+
+@When("User input (.*) and (.*) and (.*)")
+def inputForm(String username, String email, String enquery) {
+	WebUI.setText(findTestObject('ContactUs/Field_Username'), username)
+
+	WebUI.setText(findTestObject('ContactUs/Field_Email'), email)
+
+	WebUI.setText(findTestObject('ContactUs/Field_Enquiry'), enquery)
+}
+
+@And("click Submit button")
+def clickSubmit() {
+	WebUI.click(findTestObject('ContactUs/Btn_Submit'))
+}
+
+@Then("User success to send enquery form")
+def userSuccessToSendEnqueryForm() {
+	WebUI.verifyElementText(findTestObject('ContactUs/Message_Succes_Enquiry'), 'Your enquiry has been successfully sent to the store owner.')
 }

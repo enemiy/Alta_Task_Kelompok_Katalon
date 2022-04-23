@@ -43,35 +43,28 @@ import cucumber.api.java.en.When
 
 
 
-@Given("User on home page")
-def userOnHomePage() {
-	WebUI.openBrowser('')
+class Subscribe {
+	/**
+	 * The step definitions below match with Katalon sample Gherkin steps
+	 */
+	@Given("User on Home page")
+	def  userOnHomePage(){
+		WebUI.click(findTestObject('Subscribe/MenuAwal_Btn'))
+	}
 
-	WebUI.maximizeWindow()
+	@When("User fill (.*) subscribing newsletter")
+	def userFillEmailSubscribingNewsletter(String email) {
+		WebUI.setText(findTestObject('Subscribe/Field_EmailSubs'), email)
+	}
 
-	WebUI.navigateToUrl('https://services.smartbear.com/samples/TestComplete15/smartstore/')
-}
+	@And("user click subscribe and submit")
+	def userClickSubscribeAndSubmit() {
+		WebUI.click(findTestObject('Subscribe/Input_Subscribe_RadioBtn'), FailureHandling.STOP_ON_FAILURE)
+		WebUI.click(findTestObject('Subscribe/Btn_Submit'))
+	}
 
-@And("User click menu contact us")
-def userClickMenuContactUs() {
-	WebUI.click(findTestObject('ContactUs/Btn_ContactUs'), FailureHandling.STOP_ON_FAILURE)
-}
-
-@When("User input (.*) and (.*) and (.*)")
-def inputForm(String username, String email, String enquery) {
-	WebUI.setText(findTestObject('ContactUs/Field_Username'), username)
-
-	WebUI.setText(findTestObject('ContactUs/Field_Email'), email)
-
-	WebUI.setText(findTestObject('ContactUs/Field_Enquiry'), enquery)
-}
-
-@And("click Submit button")
-def clickSubmit() {
-	WebUI.click(findTestObject('ContactUs/Btn_Submit'))
-}
-
-@Then("User success to send enquery form")
-def userSuccessToSendEnqueryForm() {
-	WebUI.verifyElementText(findTestObject('ContactUs/Message_Succes_Enquiry'), 'Your enquiry has been successfully sent to the store owner.')
+	@Then("User success to subscribe newsletter")
+	def userSuccessToSubscribeNewsletter() {
+		WebUI.verifyElementText(findTestObject('Subscribe/Verify_Message_Success'), 'Thank you for signing up! A verification email has been sent. We appreciate your interest.')
+	}
 }
