@@ -25,3 +25,29 @@ CucumberKW.runFeatureFile('Include/features/detailProduct.feature')
 
 CucumberKW.runFeatureFile('Include/features/AddWishList.feature')
 
+CucumberKW.runFeatureFile('Include/features/EmailYourFriend.feature')
+
+CucumberKW.runFeatureFile('Include/features/DeleteWishlist.feature')
+
+CucumberKW.runFeatureFile('Include/features/AddToCart - Copy.feature')
+
+CucumberKW.runFeatureFile('Include/features/CompareProduct - Copy.feature')
+
+CucumberKW.runFeatureFile('Include/features/Checkout - Copy.feature')
+
+CucumberKW.runFeatureFile('Include/features/ContactUs - Copy.feature')
+
+CucumberKW.runFeatureFile('Include/features/Subscribe - Copy.feature')
+
+CucumberKW.runFeatureFile('Include/features/Unsubscribe - Copy.feature')
+
+CucumberKW.runFeatureFile('Include/features/FilterPrice - Copy.feature')
+
+CucumberKW.runFeatureFile('Include/features/WriteReview.feature')
+
+CucumberKW.runFeatureFile('Include/features/AddNewAddress.feature')
+
+CucumberKW.runFeatureFile('Include/features/EditProfile - Copy.feature')
+
+CucumberKW.runFeatureFile('Include/features/ChangePassword.feature')
+

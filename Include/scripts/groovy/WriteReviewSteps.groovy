@@ -49,7 +49,7 @@ class WriteReviewSteps {
 	 */
 	@Given("Navigate watches category")
 	def clickWatchesCategory() {
-
+		WebUI.navigateToUrl('https://services.smartbear.com/samples/TestComplete15/smartstore/')
 		WebUI.click(findTestObject('Object_Write_a_Review/watches_category'))
 	}
 

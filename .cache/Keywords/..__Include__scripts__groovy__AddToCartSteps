@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "8BA2EDC0DFD3274F9EDDC327C1B3F7CF",
+  "keywordFileContentHash": "3106C80FAA0ED669BA5F644F5E221CC9",
   "keywordClasses": [
     {
       "name": "AddToCartSteps",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

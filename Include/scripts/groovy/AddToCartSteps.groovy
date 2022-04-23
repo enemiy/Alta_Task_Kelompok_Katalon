@@ -50,7 +50,7 @@ class AddToCartSteps {
 	@Given("User click items")
 	def clickItems() {
 		println ("\n I am inside clickItems")
-
+		WebUI.navigateToUrl('https://services.smartbear.com/samples/TestComplete15/smartstore/')
 		WebUI.click(findTestObject('Add To Cart/img_Category Mobile Phone'))
 		WebUI.scrollToElement(findTestObject('Add To Cart/txt_Airy Pods'), 1)
 	}

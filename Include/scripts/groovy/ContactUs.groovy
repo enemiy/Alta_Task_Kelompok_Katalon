@@ -45,10 +45,6 @@ import cucumber.api.java.en.When
 
 @Given("User on home page")
 def userOnHomePage() {
-	WebUI.openBrowser('')
-
-	WebUI.maximizeWindow()
-
 	WebUI.navigateToUrl('https://services.smartbear.com/samples/TestComplete15/smartstore/')
 }
 

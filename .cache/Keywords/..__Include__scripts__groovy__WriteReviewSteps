@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "68B39D5B8FC434EC0995E0011A8282A0",
+  "keywordFileContentHash": "81C7E1D89A0BF16D1EC75969AB5BE60A",
   "keywordClasses": [
     {
       "name": "WriteReviewSteps",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

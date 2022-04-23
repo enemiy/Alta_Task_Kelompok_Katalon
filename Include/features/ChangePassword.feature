@@ -11,4 +11,4 @@ Feature: Change Password
 
     Examples: 
       | oldpassword | newpassword | confirmpassword |
-      | Salsa321!   | Salsa123!   | Salsa123!       |
+      | Hahahi_123   | Salsa123!   | Salsa123!       |

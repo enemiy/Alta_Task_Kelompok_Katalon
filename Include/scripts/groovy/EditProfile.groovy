@@ -52,6 +52,7 @@ class EditProfile {
 	@Given("User click profile button")
 	def clickProfileButton() {
 		println ("\n I am inside clickProfileButton")
+		WebUI.navigateToUrl('https://services.smartbear.com/samples/TestComplete15/smartstore/')
 
 		WebUI.click(findTestObject('Edit Profile/btn_Profile'))
 	}
