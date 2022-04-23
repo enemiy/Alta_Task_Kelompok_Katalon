@@ -47,9 +47,9 @@ class login {
 	/**
 	 * The step definitions below match with Katalon sample Gherkin steps
 	 */
-@Given("Navigate to login page")
+	@Given("Navigate to login page")
 	def onLoginPage() {
-		WebUI.openBrowser('https://services.smartbear.com/samples/TestComplete15/smartstore/login?returnUrl=%2Fsamples%2FTestComplete15%2Fsmartstore%2F')
+		WebUI.navigateToUrl('https://services.smartbear.com/samples/TestComplete15/smartstore/')
 		WebUI.maximizeWindow()
 	}
 

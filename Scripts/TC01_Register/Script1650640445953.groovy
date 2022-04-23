@@ -35,9 +35,9 @@ WebUI.selectOptionByValue(findTestObject('Register/date_m'), '12', true)
 
 WebUI.selectOptionByValue(findTestObject('Register/date_y'), '2001', true)
 
-WebUI.setText(findTestObject('Register/email'), 'hih@te.com')
+WebUI.setText(findTestObject('Register/email'), 'ih@te.com')
 
-WebUI.setText(findTestObject('Register/username'), 'hhh')
+WebUI.setText(findTestObject('Register/username'), 'hehehe')
 
 WebUI.setText(findTestObject('Register/pass'), 'Hahahi_123')
 

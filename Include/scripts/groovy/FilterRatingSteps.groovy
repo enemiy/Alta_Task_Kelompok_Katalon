@@ -51,12 +51,12 @@ class FilterRatingSteps {
 	}
 
 	@When("Click filter rating stars")
-	def viewShowProduct() {
+	def clickFilterRating() {
 		WebUI.click(findTestObject('Object_Filter_by_Rating/checklist_4_stars'))
 	}
 
 	@And("User click view show product")
-	def clickFilterRating() {
+	def viewShowProduct() {
 		WebUI.click(findTestObject('Object_Filter_by_Rating/view_show_product'))
 	}
 

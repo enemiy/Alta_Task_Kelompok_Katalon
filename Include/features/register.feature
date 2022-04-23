@@ -19,4 +19,4 @@ Feature: Register akun
 
     Examples: 
       | f_name  | last_name | day_birth | month  | years | email  | username | pass | confirmpass  | company | 
-      | nanda | Ra | 15 | 12 | 2001 | hah@heh.com  | hahehoo | haheho_123  | haheho_123 | alta |
+      | rafika | anjani | 15 | 12 | 2001 | hara@huru.com  | harara | Hahahi_123  | Hahahi_123 | alta |

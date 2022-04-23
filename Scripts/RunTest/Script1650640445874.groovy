@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-CucumberKW.runFeatureFile('Include/features/login.feature')
+CucumberKW.runFeatureFile('Include/features/register.feature')
 
 CucumberKW.runFeatureFile('Include/features/search.feature')
 
@@ -44,6 +44,12 @@ CucumberKW.runFeatureFile('Include/features/Unsubscribe - Copy.feature')
 CucumberKW.runFeatureFile('Include/features/FilterPrice - Copy.feature')
 
 CucumberKW.runFeatureFile('Include/features/WriteReview.feature')
+
+CucumberKW.runFeatureFile('Include/features/FilterRating.feature')
+
+CucumberKW.runFeatureFile('Include/features/FilterDelivery.feature')
+
+CucumberKW.runFeatureFile('Include/features/FilterAvailability.feature')
 
 CucumberKW.runFeatureFile('Include/features/AddNewAddress.feature')
 
